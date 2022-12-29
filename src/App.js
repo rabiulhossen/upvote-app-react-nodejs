@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import { io } from "socket.io-client";
 
 import './App.css';
@@ -21,6 +22,7 @@ function App() {
 <Route path="/register" element={<Register socket={socket}/>}/>
 
 </Routes>
+<ToastContainer/>
     </>
   );
 }
