@@ -12,8 +12,8 @@ export default function UploadPhotos({ socket }) {
    return (
       <div className="uploadContainer">
          <div className="uploadText">
-            <h1>Upload Photo</h1>
-            <form onSubmit={uploadPhoto} method="" POST>
+            <h2>Upload Photo</h2>
+            <form onSubmit={uploadPhoto} method="POST">
                <label htmlFor="url">paste the image url</label>
                <input
                   type="text"
