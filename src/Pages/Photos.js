@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from 'react'
-import Navbar from './Navbar';
+
 import PhotoHolder from './PhotoHolder';
 
 export default function Photos({socket}) {
@@ -21,7 +21,7 @@ const [photos, setPhotos] = useState([
 
    return (
       <div>
-         <Navbar />
+      
          <PhotoHolder photos={photos} socket={socket} />
       </div>
    );

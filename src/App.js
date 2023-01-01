@@ -5,6 +5,8 @@ import { io } from "socket.io-client";
 import './App.css';
 import Login from "./Pages/Login";
 import MyPhotos from "./Pages/MyPhotos";
+import Navbar from "./Pages/Navbar";
+import PhotoHolder from "./Pages/PhotoHolder";
 import Photos from "./Pages/Photos";
 import Register from "./Pages/Register";
 import UploadPhotos from "./Pages/UploadPhotos";
@@ -17,7 +19,10 @@ function App() {
   const socket = io.connect("http://localhost:5000");
   return (
     <>
+ 
 <BrowserRouter>
+<Navbar/>
+
 <Routes>
 
 <Route path="/photos" element={<Photos/>}/>

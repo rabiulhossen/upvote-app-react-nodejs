@@ -10,7 +10,7 @@ export default function SharePhoto({socket}) {
   const {user}=useParams()
   return (
     <div>
-<Navbar/>
+
 <PhotoHolder socket={socket} photos={photos}/>
 
 

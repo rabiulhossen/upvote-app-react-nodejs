@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function UploadPhotos({ socket }) {
-   const [photoUrl, setPhotoUrl] = React.useState('');
+   const [photoUrl, setPhotoUrl] = useState('');
    const navigator = useNavigate();
    const uploadPhoto = (e) => {
       e.preventDefault();
